@@ -17,5 +17,7 @@ void primo(int numero){
 
 void main(){
   primo(2);
+  primo(5);
+  
 
 }
