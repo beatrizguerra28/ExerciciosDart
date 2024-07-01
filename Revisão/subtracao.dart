@@ -1,17 +1,16 @@
 
-int subtracaoNumeros(List<int> numeros){
-  if (numeros.isEmpty){
-    throw ArgumentError("Lista vazia, não pode!");
+int Subtracao(List<int> numeros){
+  if (numeros.isEmpty){ 
+    return 0;
   }
-  int result = numeros[0];
-  for (int i = 1; i < numeros.length; i++){
-    result -= numeros[i];
+int resultado = numeros[0];
+  for(int i = 1; i < numeros.length; i++){
+    resultado -= numeros[i];
   }
-  return result;
+  return resultado;
 }
-
 void main(){
-  List<int> listaNumeros = [100, 40, 28];
-  int resultado = subtracaoNumeros(listaNumeros);
-  print("A subtração dos números é: $resultado"); 
+List<int> numero = [10, 8];
+int resultado = Subtracao(numero);
+  print("A subtração dos números é: $resultado");
 }
